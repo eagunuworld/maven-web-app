@@ -1,19 +1,19 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	
+
 	<groupId>com.mt</groupId>
-	<artifactId>maven-web-application</artifactId>
+	<artifactId>maven-web-app</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
-	
-	<name>maven-web-application</name>
+
+	<name>maven-web-app</name>
 
 	<description>Maven Web Project for Java Programming Language</description>
 
 	<organization>
-		<name>Mithun Technologies</name>
-		<url>http://mithuntechnologies.com/</url>
+		<name>Eghosa Technologies</name>
+		<url>http://eghosa4live.com/</url>
 	</organization>
 
 	<properties>
@@ -23,20 +23,20 @@
 		<log4j.version>1.2.17</log4j.version>
 		<sonar.host.url>http://172.31.14.175:9000/</sonar.host.url>
                 <sonar.login>squ_05c534b7dd9e8528742ed2d414402704806a97c1</sonar.login>
-	
+
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
 	</properties>
 
 	<dependencies>
-		
+
 		<dependency>
 			<groupId>org.json</groupId>
 			<artifactId>json</artifactId>
 			<version>20160212</version>
 		</dependency>
-		
+
 		<!-- test dependencies -->
 		<dependency>
 			<groupId>junit</groupId>
@@ -81,7 +81,7 @@
 			<artifactId>spring-context</artifactId>
 			<version>${spring.version}</version>
 		</dependency>
-		
+
 		<!-- provided dependencies -->
 
 		<dependency>
@@ -90,28 +90,28 @@
 			<version>3.1.0</version>
 			<scope>provided</scope>
 		</dependency>
-		
+
 	</dependencies>
-	
+
 	<distributionManagement>
-	
+
 	    <repository>
 	      <id>nexus</id>
-	      <name>Mithun Technologies Releases Nexus Repository</name>
+	      <name>Eghosa Technologies Releases Nexus Repository</name>
 	      <url>http://172.31.37.81:9980/mithuntechnologies/repository/citibank-release/</url>
 	    </repository>
-	    
+
 	    <snapshotRepository>
 	      <id>nexus</id>
-	      <name>Mithun Technologies Snapshot Nexus Repository </name>
+	      <name>Eghoa Technologies Snapshot Nexus Repository </name>
 	      <url>http://172.31.37.81:9980/mithuntechnologies/repository/citibank-snapshot/</url>
 	    </snapshotRepository>
-	    
+
 	</distributionManagement>
-	
+
 	<build>
-		<finalName>maven-web-application</finalName>
-		
+		<finalName>maven-web-app</finalName>
+
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -130,7 +130,7 @@
 				<configuration>
 					<scanIntervalSeconds>10</scanIntervalSeconds>
 					<webApp>
-						<contextPath>/maven-web-application</contextPath>
+						<contextPath>/maven-web-app</contextPath>
 					</webApp>
 				</configuration>
 			</plugin>
@@ -143,12 +143,12 @@
 					<downloadSources>true</downloadSources>
 					<downloadJavadocs>true</downloadJavadocs>
 					<wtpversion>2.0</wtpversion>
-					<wtpContextName>maven-web-application</wtpContextName>
+					<wtpContextName>maven-web-app</wtpContextName>
 				</configuration>
 			</plugin>
-			
+
 </plugins>
 	</build>
-	
-	
+
+
 </project>
